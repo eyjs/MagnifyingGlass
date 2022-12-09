@@ -1,0 +1,53 @@
+{
+  "name": "open-source-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/module.js",
+  "homepage": "",
+  "repository": "",
+  "bugs": {
+    "url": "",
+    "email": "kdydesign@gmail.com"
+  },
+  "scripts": {
+    "dev": "",
+    "lint": "eslint lib test",
+    "test": "yarn lint && jest",
+    "release": "yarn test && standard-version && git push --follow-tags && npm publish"
+  },
+  "keywords": [
+    "open-source"
+  ],
+  "contributors": [
+    {
+      "name": "Dev.DY <kdydesign@gmail.com>"
+    }
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "lib"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "babel-eslint": "latest",
+    "babel-jest": "latest",
+    "codecov": "latest",
+    "eslint": "latest",
+    "eslint-config-standard": "latest",
+    "eslint-plugin-import": "latest",
+    "eslint-plugin-jest": "latest",
+    "eslint-plugin-node": "latest",
+    "eslint-plugin-promise": "latest",
+    "eslint-plugin-standard": "latest",
+    "husky": "latest",
+    "jest": "latest",
+    "standard-version": "latest"
+  }
+}
