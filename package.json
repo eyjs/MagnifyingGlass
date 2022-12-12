@@ -3,17 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "lib/module.js",
-  "homepage": "",
+  "homepage": "http://eyjs.github.io/MagnifyingGlass",
   "repository": "",
   "bugs": {
     "url": "",
-    "email": "kdydesign@gmail.com"
+    "email": "wnstn1342@gmail.com"
   },
   "scripts": {
     "dev": "",
     "lint": "eslint lib test",
     "test": "yarn lint && jest",
-    "release": "yarn test && standard-version && git push --follow-tags && npm publish"
+    "release": "yarn test && standard-version && git push --follow-tags && npm publish",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [
     "open-source"
@@ -30,7 +32,6 @@
   "files": [
     "lib"
   ],
-  "dependencies": {},
   "devDependencies": {
     "@babel/core": "latest",
     "@babel/preset-env": "latest",
@@ -46,6 +47,7 @@
     "eslint-plugin-node": "latest",
     "eslint-plugin-promise": "latest",
     "eslint-plugin-standard": "latest",
+    "gh-pages": "^4.0.0",
     "husky": "latest",
     "jest": "latest",
     "standard-version": "latest"
